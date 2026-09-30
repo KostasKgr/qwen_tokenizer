@@ -3,7 +3,7 @@ version: "3"
 tasks:
   tokenize:
     cmds:
-      - HF_HUB_OFFLINE=1 uv run --with transformers python main.py
+      - HF_HUB_OFFLINE=1 uv run --with transformers python main.py {{.CLI_ARGS}}
 
   dl-tokenizer:
     cmds:
